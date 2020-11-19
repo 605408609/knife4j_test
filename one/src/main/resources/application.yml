@@ -1,0 +1,11 @@
+server:
+  port: 9099
+
+#如果集成了shiro，需要过滤以下路径
+#不需要认证
+exclude:
+  authe:
+    url: /swagger-resources/**,/v2/api-docs,/doc.html,/webjars/**
+  #不需要鉴权
+  authc:
+    url: /swagger-resources/**,/v2/api-docs,/doc.html,/webjars/**
